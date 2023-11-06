@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+    <head> 
+        <meta charset="utf-8">     
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Add Your Website Title Here</title> 
+
+        <meta name="author" content="Add Your Name Here">
+        <meta name="description" content="Add a description of your website here">
+        <meta name="keywords" content="Add keywords that people might search when looking for your site, with commas, to seperate them">
+
+        <link rel="stylesheet" href="css/style.css">         
+        <link rel="icon" href="place-your-tab-icon-here.jpg"> 
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.11.2/cdn/themes/light.css">
+                
+    </head>
+    <body>
+     
+
+        <!--HEADER-->
+        <!--LOGO-->
+        <!--NAVIGATION-->
+
+        <!--MAIN CONTENT-->
+
+        <section id="RinselessShampoo">
+            <div class="shampooTotal">
+               <div class="shampooText">
+                 <h5>Rinseless Shampoo</h5>
+                 <sl-rating label="Rating" precision="0.5" value="2.5"></sl-rating>     
+                 <div id="price">$15</div>
+                 <a href="index.html"> <u>Usage method</u></a>
+                 <p id="introduce">A no-fuss approach to bathtime! Just shake, spray, and rub to help deodorize and maintain a healthy coat. This waterless formula is vegan, hypoallergenic, 99.4% natural, and parabe... Read More</p>
+                 <sl-button class="pink">SHOP NOW</sl-button>
+
+                 <style>
+                   sl-button.pink::part(base) {
+                     /* Set design tokens for height and border width */
+                     --sl-input-height-medium: 48px;
+                     --sl-input-border-width: 4px;
+                 
+                     border-radius: 20px;
+                     background-color: #F2C1D1;
+                     border-top-color: white;
+                     border-left-color: white;
+                     border-bottom-color: #a6758f;
+                     border-right-color:#a6758f;
+                     color: white;
+                     font-size: 1.135rem;
+                     box-shadow: 0 2px 10px #0002;
+                     transition: var(--sl-transition-medium) transform ease, var(--sl-transition-medium) border ease;
+                   }
+                 
+                   sl-button.pink::part(base):hover {
+                     transform: scale(1.05) rotate(-1deg);
+                   }
+                 
+                   sl-button.pink::part(base):active {
+                     border-top-color: #dca3c1;
+                     border-right-color: #dca3c1;
+                     border-bottom-color: white;
+                     border-left-color: white;
+                     transform: scale(1.05) rotate(-1deg) translateY(2px);
+                   }
+                 
+                   sl-button.pink::part(base):focus-visible {
+                     outline: dashed 2px deeppink;
+                     outline-offset: 4px;
+                   }
+                 </style>
+               </div>  
+                 <div class="box"> 
+                    <img id="shampoo" src="images/shampoo.png" alt="A image of Rinseless Shampoo">
+                 </div>
+                 <div class="full"></div>
+                 <img id="chatBox" src="images/box.png" alt="A image of White dialog box">
+           </div>        
+        </section>
+   
+            
+
+        <!--MAIN CONTENT ENDS-->
+
+        
+        <!--FOOTER-->
+        <!--CONTACT FORM OR TEXT-->
+        <!--SOCIAL MEDIA ?-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script><!--GSAP Core Library-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script> <!--GSAP's Rolling Trigger plugin-->
+        <script src="main.js" defer></script><!--Connect the scroller plugin above to my main. js file-->
+        <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.11.2/cdn/shoelace-autoloader.js"></script>
+    </body> 
+</html>

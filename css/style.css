@@ -1,0 +1,527 @@
+/* ==========BASIC UNIVERSAL STYLING & CLEAN UP============= */
+    /* some basic css resetting */
+@import 'https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.11.2/cdn/themes/light.css';
+
+    body { margin: 0; box-sizing: border-box; }
+a { text-decoration: none; color:black; }
+@font-face{
+    font-family: "FANTASYMAGIST";
+    src: url("../fonts/FANTASYMAGIST.otf");
+}
+@font-face{
+    font-family: "RUZACKMOJOK";
+    src: url("../fonts/RUZACKMOJOK.otf");
+}
+@font-face{
+    font-family: "HeyComic";
+    src: url("../fonts/HeyComic.otf");
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');    /* SVG Animation*/
+
+
+/*
+/* ===============================LOGO================================ */
+.logo{
+    width: 40px;
+    height: 40px;
+}
+/* =============================NAVIGATION=========================== */
+.user{
+    width: 50px;
+}
+
+
+.logo:hover{                        /*Add an enlarged floating animation to the logo*/
+    animation:bloby ease 1s alternate;
+}
+@keyframes bloby {
+    from{
+        transform: scale(1);       
+    }
+    to{
+        transform: scale(1.3);
+    }    
+}                        
+.user:hover{                        /*Add an enlarged floating animation to the search icon*/
+    animation:bloby ease 1s alternate;
+}
+@keyframes bloby {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.3);
+    }    
+}   
+
+nav {
+    padding: 25px 6px;   
+    margin: auto;  
+    font-size: 140%;
+    font-family: Helvetica; 
+    text-align: center; 
+    position:fixed;
+    width:100%;
+    top:0;
+    background-color: #F4B099;
+    margin-bottom: 0%;
+  }
+
+  nav a:first-child:hover {
+    background-color: transparent;
+  }
+  
+nav a {
+    font-size: 26px;
+    font-family: "HeyComic";
+    text-decoration: none;
+    color: black;     
+    padding: 30px;
+    margin: 0 ;
+    transform: 0.5s; /* ADD TRANSITION */               
+  }
+
+nav a:hover{
+    color: black;
+    background-color: white;
+    padding: 25px;
+  }
+nav .logo { 
+    position: absolute;
+    top:23%;
+    left:3%;/*Adjust the position of the log0n icon*/
+  }
+nav .user {
+    position: absolute;
+    top:15%;
+    right:5%;/*Adjust the position of the login icon*/
+  }
+/* ==========HEADER============= */
+header{
+    background-image: url("../images/background0.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: -25px; /*Make the homepage and navigation seamless*/
+}
+h1{
+    font-family: "RUZACKMOJOK";
+    font-size: 70px;
+    color: #26496C;
+    margin: 86px;
+    width: 400px;
+    margin-left:60%;
+    margin-top: 100px;
+    padding-top: 100px;
+    text-align: left;
+}
+.blue{
+    margin-top: 1%;
+    margin-left:80%;
+    margin-bottom: 14%;
+}
+.goBox{
+    padding-bottom:180px ;
+}
+
+
+/* ==========SECTION 1 STYLING============= */
+#ProductRange{
+    background-image: url("../images/background1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 700px;
+}
+h2{
+    font-family:"RUZACKMOJOK";
+    font-size:50px;
+    color: white;
+    margin-top: 0px;
+    padding-top: 50px;
+}
+a{
+    color: white;
+    font-size:15px ;
+    font-family:"HeyComic" ;
+}
+#producIngredient{
+    font-size:15px;
+    color: white;
+    font-family:"HeyComic" ;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+#PRbutton{
+    background-color: #F2C1D1;
+    font-size:23px;
+    color: white;
+    margin-bottom: 20px;
+    width: 160px;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 20px;
+    font-family: "RUZACKMOJOK";
+}
+.text{
+    margin-left: 100px;
+    margin-top: 10%;
+    width: 400px;
+    height: 600px;
+}
+#yellow1,#yellow2,#red1,#red2,#green1,#green2{
+    width: 220px;
+    height: 300px;
+    width:240px;  
+    line-height: 200px;
+    text-align: right;
+    border-radius: 38%;
+    margin: 20px;
+    margin-top: 150px;
+}
+.products{
+    width: 900px;
+    height: 600px;
+    margin-top: 6%;
+}
+.total1{
+    display:flex ;
+    flex-wrap: wrap;
+}
+
+
+/* ==========SECTION 2 STYLING============= */
+#Usagemethod{
+    background-image: url("../images/background2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 700px;
+}
+h3{
+    font-family: "RUZACKMOJOK";
+    font-size:50px;
+    color: black;
+    margin-top: 0;
+    padding-top: 50px;
+    margin-left: 100px;
+}
+#methodContent{
+    font-size:15px;
+    color: black;
+    font-family: "HeyComic";
+    margin-left: 100px;
+    width: 400px;
+    font-size: 20px;
+}
+#methodImage{
+    width: 280px;
+    border-radius: 80px;
+    margin-top: 60px;
+    margin-left: 300px;
+}
+.total2{
+    display:flex ;
+    flex-wrap: wrap;
+    padding-top: 100px;
+}
+
+
+/* ==========SECTION 3 STYLING============= */
+#Store{
+    background-image: url("../images/background4.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 700px;
+}
+h4{
+    font-family: "RUZACKMOJOK";
+    font-size:45px;
+    color: black;
+    margin-top: 0;
+    padding-top: 10%;
+    margin-bottom: 8%;
+    margin-left: 100px;
+}
+#storeButton1,#storeButton2,#storeButton3,#storeButton4,#storeButton5{
+    font-size:18px;
+    color: #3E5673;
+    width: 300px;
+    height: 40px;
+    background-color: #F0B7A5;
+    margin-top: 10px;
+    text-align:center;
+    line-height: 40px;
+    font-family: "HeyComic";
+}
+
+.stores{
+margin-left: 35%;
+margin-bottom: 10px;
+}
+
+
+/*animejs*/
+.box{
+    position: relative;
+    width: 100px;
+    margin: 4px;
+    display: inline-block;
+}
+#shampoo1{
+    width: 100px;
+}
+#shampoo2{
+    width: 80px;
+}
+#shampoo3{
+    width: 60px;
+}
+#shampoo4{
+    width: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ==========SECTION Rinseless Shampoo STYLING============= */
+#RinselessShampoo{
+    background-image: url(../images/background2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 700px;
+}
+h5{
+    font-family:"RUZACKMOJOK";
+    font-size:60px;
+    color: white;
+    margin-top: 0px;
+    padding-top: 50px;
+    margin-bottom: 10px;
+}
+#price{
+    font-size: 36px;
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+#shoopButton{
+    background-color:black ;
+    font-size:23px;
+    color: white;
+    margin-bottom: 20px;
+    width: 160px;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 20px;
+    font-family: "RUZACKMOJOK";
+}
+#shampoo{
+    width: 290px;
+    height: 600px;
+    padding-top: 60px;
+    padding-left: 3%;
+}
+#chatBox{
+    width: 430px;
+    height: 350px;
+    padding-top: 140px;
+    padding-right: 9%;
+}
+#introduce{
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+.shampooText{
+    margin-left: 100px;
+    width: 400px;
+    margin-top: 100px;
+    font-family: "HeyComic";
+}
+#introduce{
+    width: 300px;
+}
+.shampooTotal{
+    display:flex ;
+    flex-wrap: wrap;
+}
+
+
+
+/*{
+    border: solid red 2px;
+}                /*Help to view borders at any time*/
+/* ==========SECTION img gallery STYLING============= */
+.img-gallery{
+    width: 80%;
+    margin: 100px auto 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+.img-gallery img{
+    height:300px;
+    width: 250px;
+    cursor:pointer;
+}
+.img-gallery img:hover{
+    transform: scale(0.8) rotate(-15deg);
+    border-radius: 20px;
+    box-shadow: 0 32px 75px reba(68,77,136,0.2);
+}
+.full-img{
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.9);
+    position: fixed;
+    top:0;
+    left:0;
+    display:none;
+    align-items: center;
+    justify-content: center;
+    z-index:100;
+}
+.full-img img{
+    width: 90%;
+    max-width: 500px;
+}
+.full-img span{
+    position:absolute;
+    top:5%;
+    right: 5%;
+    font-size: 30px;
+    color: #fff;
+    cursor:pointer;
+}
+
+/* ==========FOOTER STYLIING============= */
+#fotter{
+    background-color:#F5E1DA ;
+}
+
+#title{
+    margin-top: 0;
+    padding-top: 50px;
+    font-size: 25px;
+    font-family: "RUZACKMOJOK";
+}
+#footContent2,#footContent1{
+    font-family: "HeyComic";
+}
+#i,#f{
+    width: 50px;
+}
+#t{
+    width: 42px;
+}
+#icons{
+    display:flex ;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+#footContent1,#footContent2{
+    width: 100px;
+}
+.footIcons{
+    display:block ;
+    flex-wrap: wrap;
+    width: 300px;
+    margin-left: 100px;
+}
+.footText{
+    display:flex ;
+    flex-wrap: wrap;
+    width: 300px;
+    padding-left : 300px;
+    margin-top: 70px;
+}
+#footContent3{
+    text-align: center;
+    font-size: 15px;
+    margin-top: 30px;
+    padding-bottom: 16px;
+    width: 1380px;
+}
+#fotter{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========RESPONSIVE DESIGN============= */
+
+/* ===== 5K RETINA MAC LABS: Media queries for Curtin Uni mac lab testing only ===== */
+@media only screen and (max-width: 5120px) {
+
+        
+}
+
+/* ===== DESKTOP HD: Media queries for most HD desktops ===== */
+@media only screen and (max-width: 1920px) {
+   
+    
+    
+}
+
+/* ===== SMALL DESKTOP: Media queries for laptop/small desktop ===== */
+@media only screen and (max-width: 1366px) { 
+
+      
+    
+}
+
+/* ===== TABLET: Media queries for verticle and horizontal ===== */
+@media only screen and (max-width: 1024px) { 
+
+      
+    
+}
+
+@media only screen and (max-width: 768px) { 
+
+    
+        
+}
+
+/* ===== MOBILE: Media queries for small mobile resolution. ===== */
+@media only screen and (max-width: 640px) { 
+
+    
+        
+}
+
+
+@media only screen and (max-width: 360px) { 
+
+            
+        
+}
+
